@@ -1,0 +1,166 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Segoe UI Symbol;
+}
+.UsernameD{
+	background: #fff;
+	padding: 15px 10px;	 
+	position: absolute;
+	top: 0%;
+	left: 40%;
+	transform: (-40%, -10%);
+	border-radius: 11px;
+	visibility: hidden;
+}
+.UsernameD input{
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 2px 6px
+}
+.welcomeT{
+	font-size: 50px; 
+	position: absolute;
+	visibility: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;
+	color: #fff;
+	font-style: italic; 
+}
+.WT{	
+	visibility:  visible;	
+}
+.Upop{
+	top: 10%;
+	visibility: visible;
+	transition: top 1.5s
+}
+body{
+	background: cyan;
+}
+.container{
+	display: flex;
+	align-items: center;
+	flex-flow: wrap;
+}
+.addNote{
+    background: #fff;
+    width: 100px;
+    text-align: center;
+    padding: 88px 40px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    margin: 11px;
+    cursor: pointer;
+
+}
+.addNote p{
+	margin-top: 9px
+}
+.button{
+	padding: 6px 10px;
+	border: 3px dashed cyan;
+	border-radius: 100%;
+	color: cyan;
+	font-weight: 700;
+}
+.inpSecPop{
+	background: #fff;
+	position: fixed;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.1);
+	visibility: hidden;
+	padding: 22px 10px;
+	border-radius: 11px;
+	z-index: 9999
+}
+.inpSecPop input{
+	border: 2px solid black;
+	border-radius: 4px;
+	padding: 2px 2px;
+	margin-bottom: 10px;
+	width: 150px;
+	font-size: 20px  
+}
+.inpSecPop textarea{
+	border: 2px solid black;
+	border-radius: 4px;
+	padding: 2px 2px;
+	margin-bottom: 5px;
+	resize: none;
+	font-size: 20px;
+	height: 130px	
+}
+.inpSecPop button{
+	border: 2px solid black;
+	background: cyan;
+	border-radius: 4px;	
+	cursor: pointer;
+}	
+.openPop{
+	transform: translate(-50%, -50%) scale(1);
+	transition: 1.5s ease-in-out;
+	visibility: visible;
+}
+.noteContainer{
+	background: #fff;
+	width: 135px;
+	padding: 9px 9px;
+	border-top-right-radius: 9px;
+	border-top-left-radius: 9px;
+	margin-left: 12px;
+	margin-top: 11px;	
+}
+.overlay{
+	height: 1000%;
+	width: 100%;	
+	position: fixed;
+	background: rgba(55, 55, 111, 0.6);
+	opacity: 0;
+	pointer-events: none;
+}
+.Ovshow{
+	opacity: 1;
+	pointer-events: all;
+	transition: 1.6s ease-in-out
+}
+.noteContainer .ttlL{
+	text-align: center;
+	font-family: Gabriola;
+	font-weight: 900;
+
+}
+.noteContainer .text{
+	padding: 19px 3px;
+	border-top: 1px solid cyan;
+	border-bottom: 1px solid cyan;
+	border-radius: 9px;
+	font-family: Segoe Script;
+	font-weight: 900;
+}
+.noteContainer .date{
+	font-family: Comic Sans Ms
+}		
+.notes{
+	display: flex;
+	flex-flow: wrap;
+}
+
+@media screen and (max-width: 576px){
+	.welcomeT{
+		font-size: 40px
+	}
+}
+@media screen and (max-width: 460px)
+{
+	.welcomeT{
+		font-size: 30px
+	}
+}
